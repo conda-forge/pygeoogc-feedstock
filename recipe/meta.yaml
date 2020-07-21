@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/cheginit/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: accb2a5395724c2cde1254d27238ec7fb460598e65680a091e61cce76ec87bfc
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
   noarch: python
