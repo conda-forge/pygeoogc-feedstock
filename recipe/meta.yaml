@@ -42,8 +42,8 @@ about:
   summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based web services
 
   description: |
-    PyGeoOGC is a part Hydrodata suite that handles connection to
-    ArcGIS RESTful-, WFS-, and WMS-based web services.
+      PyGeoOGC is a part Hydrodata software stack that provides interfaces to
+      ArcGIS RESTful-, WFS-, and WMS-based web services.
   doc_url: https://hydrodata.readthedocs.io
   dev_url: https://github.com/cheginit/pygeoogc
 
