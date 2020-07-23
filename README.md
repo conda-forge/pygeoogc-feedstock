@@ -9,7 +9,7 @@ Feedstock license: BSD-3-Clause
 
 Summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based web services
 
-PyGeoOGC is a part Hydrodata suite that handles connection to
+PyGeoOGC is a part Hydrodata software stack that provides interfaces to
 ArcGIS RESTful-, WFS-, and WMS-based web services.
 
 
