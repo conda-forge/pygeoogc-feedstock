@@ -1,5 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 980b458f00f11d129593334ac41cc90746351d88818937da1a8d8df97dd39593
+  sha256: 5823a7564a12b299084a8a2cb8553273adbb8c8a97e3d5901653faf033a98b1f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -39,11 +39,11 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'An interface to ArcGIS RESTful-, WFS-, and WMS-based web services'
+  summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based web services
 
   description: |
-      PyGeoOGC is a part Hydrodata software stack that provides interfaces to
-      ArcGIS RESTful-, WFS-, and WMS-based web services.
+    PyGeoOGC is a part Hydrodata software stack that provides interfaces to
+    ArcGIS RESTful-, WFS-, and WMS-based web services.
   doc_url: https://hydrodata.readthedocs.io
   dev_url: https://github.com/cheginit/pygeoogc
 
