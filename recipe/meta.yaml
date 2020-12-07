@@ -22,13 +22,18 @@ requirements:
   run:
     - python >=3.6
     - setuptools
-    - dataclasses
-    - defusedxml
     - owslib
     - pyproj
-    - requests
     - shapely
     - orjson
+    - defusedxml
+    - requests
+    - dataclasses
+    - aiohttp
+    - chardet
+    - aiodns
+    - brotlipy
+    - nest-asyncio
 
 test:
   imports:
