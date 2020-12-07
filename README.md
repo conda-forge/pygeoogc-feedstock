@@ -5,9 +5,13 @@ Home: https://github.com/cheginit/pygeoogc
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoogc-feedstock/blob/master/LICENSE.txt)
 
 Summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based web services
+
+Development: https://github.com/cheginit/pygeoogc
+
+Documentation: https://hydrodata.readthedocs.io
 
 PyGeoOGC is a part Hydrodata software stack that provides interfaces to
 ArcGIS RESTful-, WFS-, and WMS-based web services.
