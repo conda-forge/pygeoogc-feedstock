@@ -1,5 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.2.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9d09ef00020f808a970accb0caceaed5d14e913924ce70314491989e79ef799
+  sha256: 9b65f45463b4bff1c5236a91303dac2b811a2f6a1695086006063af914544de3
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
     - pyproj
     - shapely
     - orjson
+    - simplejson
     - defusedxml
     - requests
     - dataclasses
@@ -34,6 +35,7 @@ requirements:
     - aiodns
     - brotlipy
     - nest-asyncio
+    - cytoolz
 
 test:
   imports:
