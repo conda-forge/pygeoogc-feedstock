@@ -1,58 +1,55 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9b65f45463b4bff1c5236a91303dac2b811a2f6a1695086006063af914544de3
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoogc-{{ version }}.tar.gz
+  sha256: a12294f2b988b01842b51327170edb4802a798e71089abcf659271f29485da34
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools_scm
-  run:
     - python >=3.6
-    - setuptools
+    - setuptools-scm
+  run:
+    - aiodns
+    - aiohttp
+    - brotlipy
+    - chardet
+    - cytoolz
+    - defusedxml
+    - nest-asyncio
+    - orjson
     - owslib
     - pyproj
-    - shapely
-    - orjson
-    - simplejson
-    - defusedxml
+    - python >=3.6
     - requests
-    - dataclasses
-    - aiohttp
-    - chardet
-    - aiodns
-    - brotlipy
-    - nest-asyncio
-    - cytoolz
+    - setuptools
+    - shapely
+    - simplejson
 
 test:
   imports:
     - pygeoogc
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/cheginit/pygeoogc
+  summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based services.
   license: MIT
-  license_family: MIT
   license_file: LICENSE
-  summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based web services
-
-  description: |
-    PyGeoOGC is a part Hydrodata software stack that provides interfaces to
-    ArcGIS RESTful-, WFS-, and WMS-based web services.
-  doc_url: https://hydrodata.readthedocs.io
-  dev_url: https://github.com/cheginit/pygeoogc
 
 extra:
   recipe-maintainers:
