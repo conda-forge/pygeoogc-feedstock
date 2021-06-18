@@ -1,5 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoogc-{{ version }}.tar.gz
-  sha256: 6ca46b37d61ae9eda4bb618b36963866e27bac00bf052097cf8f0d986f12ebf3
+  sha256: ea89cbed81c043c3f291b09aeb1847d7cfe48a71bfe879c883ec8ede1ec95a7e
 
 build:
   number: 0
@@ -18,24 +18,21 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - aiodns
-    - aiohttp
-    - brotlipy
-    - chardet
     - cytoolz
     - defusedxml
-    - nest-asyncio
-    - orjson
     - owslib
+    - pydantic
     - pyproj
-    - python >=3.6
+    - python >=3.7
+    - pyyaml
     - requests
-    - setuptools
+    - requests-cache
     - shapely
     - simplejson
+    - urllib3
 
 test:
   imports:
