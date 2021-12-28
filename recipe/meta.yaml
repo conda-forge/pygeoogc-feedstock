@@ -11,7 +11,7 @@ source:
   sha256: aff2238216d488ba4db5ceaa01800bc102d7519274618beb73dfab62fe966a5a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.2
+    - async_retriever >=0.3
     - cytoolz
     - defusedxml
     - owslib
@@ -32,8 +32,8 @@ requirements:
     - requests
     - requests-cache >=0.8
     - shapely >=1.6
-    - simplejson
     - urllib3
+    - importlib_metadata
 
 test:
   imports:
