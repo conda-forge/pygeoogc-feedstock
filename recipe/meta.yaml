@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.3
+    - async_retriever >=0.3.1
     - cytoolz
     - defusedxml
     - owslib
