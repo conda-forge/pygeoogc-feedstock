@@ -30,7 +30,7 @@ requirements:
     - python >=3.7
     - pyyaml
     - requests
-    - requests-cache >=0.8
+    - requests-cache >=0.9.1
     - shapely >=1.6
     - urllib3
     - importlib_metadata
