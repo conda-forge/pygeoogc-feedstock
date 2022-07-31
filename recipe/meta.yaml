@@ -21,7 +21,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - async_retriever >=0.3.2
+    - async_retriever >=0.3.4
     - cytoolz
     - defusedxml
     - owslib <0.26
@@ -43,7 +43,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/cheginit/pygeoogc
+  home: https://github.com/hyriver/pygeoogc
   summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based services.
   license: MIT
   license_file: LICENSE
