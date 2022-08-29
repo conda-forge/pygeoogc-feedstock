@@ -1,7 +1,7 @@
 About pygeoogc
 ==============
 
-Home: https://github.com/cheginit/pygeoogc
+Home: https://github.com/hyriver/pygeoogc
 
 Package license: MIT
 
