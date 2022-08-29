@@ -1,6 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.13.3" %}
-
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,31 +7,31 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoogc-{{ version }}.tar.gz
-  sha256: f1dd2d1ff99b2b52506d84e719366e4dc52408ede92b4c35fef99cdd8143c58a
+  sha256: 13b5afae74ff0040193742eaef9c9c5b28e85ab928f19ea5fbb096e8ccbc1042
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
     - setuptools-scm
   run:
-    - async_retriever >=0.3.4
-    - cytoolz
-    - defusedxml
-    - owslib <0.26
-    - pydantic
-    - pyproj >=2.2
     - python >=3.8
     - pyyaml
-    - requests
-    - requests-cache >=0.9.1
-    - shapely >=1.7
+    - defusedxml
+    - owslib >=0.27.2
     - urllib3
+    - pyproj >=2.2
+    - requests-cache >=0.9.6
+    - requests
+    - cytoolz
+    - shapely >=1.8
+    - pydantic
+    - async_retriever >=0.3.5
 
 test:
   imports:
@@ -46,7 +45,8 @@ about:
   home: https://github.com/hyriver/pygeoogc
   summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based services.
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:
