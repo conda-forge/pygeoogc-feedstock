@@ -1,5 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.13.5" %}
+{% set version = "0.13.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoogc-{{ version }}.tar.gz
-  sha256: 13b5afae74ff0040193742eaef9c9c5b28e85ab928f19ea5fbb096e8ccbc1042
+  sha256: 3fee47b82d6d578499d0cad14f0b40e722a13876a793720fb37f5e7979356736
 
 build:
   noarch: python
