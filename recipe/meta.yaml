@@ -21,17 +21,17 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
-    - pyyaml
-    - defusedxml
-    - owslib >=0.27.2
-    - urllib3
-    - pyproj >=2.2
-    - requests-cache >=0.9.6
-    - requests
-    - cytoolz
-    - shapely >=1.8
-    - pydantic
-    - async_retriever >=0.3.5
+    - pasync-retriever >=0.3.5
+    - pcytoolz
+    - pdefusedxml
+    - ploguru
+    - powslib >=0.27.2
+    - ppyproj >=2.2
+    - ppyyaml
+    - prequests
+    - prequests-cache >=0.9.6
+    - pshapely >=1.8
+    - purllib3
 
 test:
   imports:
