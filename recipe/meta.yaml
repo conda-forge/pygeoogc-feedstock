@@ -21,7 +21,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
-    - async-retriever >=0.3.8
+    - async-retriever >=0.3.10
     - cytoolz
     - defusedxml
     - joblib
