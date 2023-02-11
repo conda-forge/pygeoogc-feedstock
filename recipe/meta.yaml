@@ -21,11 +21,10 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.8
-    - async-retriever >=0.3.10
+    - async-retriever >=0.3.12
     - cytoolz
     - defusedxml
     - joblib
-    - loguru
     - multidict
     - owslib >=0.27.2
     - pyproj >=2.2
