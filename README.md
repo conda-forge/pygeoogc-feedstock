@@ -1,11 +1,11 @@
-About pygeoogc
-==============
+About pygeoogc-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoogc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/pygeoogc
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoogc-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interface to ArcGIS RESTful-, WFS-, and WMS-based services.
 
