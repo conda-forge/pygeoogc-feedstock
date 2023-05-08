@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever >=0.14
+    - async-retriever =0.15
     - cytoolz
     - defusedxml
     - joblib
@@ -31,7 +31,7 @@ requirements:
     - pyproj >=2.2
     - requests
     - requests-cache >=0.9.6
-    - shapely >=2
+    - shapely >=1.8.5
     - ujson
     - url-normalize >=1.4
     - urllib3
