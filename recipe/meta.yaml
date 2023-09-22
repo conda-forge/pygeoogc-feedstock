@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.16,>=0.15
+    - async-retriever <0.16,>=0.15.2
     - cytoolz
     - defusedxml
     - joblib
