@@ -1,5 +1,5 @@
 {% set name = "pygeoogc" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoogc-{{ version }}.tar.gz
-  sha256: 4c6dedc464cc28376feb07940700ab7a50f797360699aa5e2d3ba0b33602b00f
+  sha256: 2a18213721c7fd8d352928549e4b11810cc762377daf86c3759aded56489fcce
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.16,>=0.15.2
+    - async-retriever <0.17,>=0.16
     - cytoolz
     - defusedxml
     - joblib
@@ -31,7 +31,7 @@ requirements:
     - pyproj >=3.0.1
     - requests
     - requests-cache >=0.9.6
-    - shapely >=1.8.5
+    - shapely >=2
     - ujson
     - url-normalize >=1.4
     - urllib3
